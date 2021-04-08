@@ -1,0 +1,619 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+/*----------------------HAMBURGUESA-------------------*/
+
+.burger-menu {
+    background-color: #680075;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.burger-menu i {
+    background-color: #680075;
+    color: #ebebee;
+    position: relative;
+    border-image-width: 50%;
+}
+
+
+/*----------------------HAMBURGUESA-------------------*/
+
+
+
+/*----------------------HEADER------------------------*/
+header {
+    background-color: #ebebee;
+}
+
+top-header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #680075;
+}
+
+tag {
+    /*<--------etiquetas del nav-bar*/
+    color: #680075;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+/*----------------------HEADER------------------------*/
+
+.categorias {
+    background-color: #ebebee;
+    border-top: solid 4px rgba(104, 0, 117, 1)
+}
+
+.categorias ul {
+    text-align: center;
+}
+
+.categorias ul li {
+    display: inline-block;
+    padding: 20px 36px;
+    border-bottom: solid 4px rgba(104, 0, 117, -1);
+    transition: 450ms;
+}
+
+.categorias ul li:hover {
+    background-color: #ce95d5;
+    border-bottom: solid 4px rgba(104, 0, 117, 1);
+}
+
+
+/*...........CATEGORÍAS DEL NAV-BAR..............*/
+
+.siteLogin {
+    position: relative;
+    top:60px ;
+}
+
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #d8d2d4;
+}
+
+
+
+
+/*----------------------Register------------------------*/
+.titulo-register{
+    width: 80%;
+    padding: 10px;
+    font-size: 25px;
+    color: darkred;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+.ya-tenes{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color:#680075;
+    font-weight:lighter;
+    margin: auto;
+    text-align: center;
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    color: #666;
+    border:#680075 double  2px;
+    border-radius: 8px;
+    max-width: 900px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-control {
+    margin-top: 15px;
+    display: block;
+}
+.form-control .control {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+label {
+    cursor: default;
+}
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+select {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.interests .interest-option {
+    width: 150px;
+}
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 12px;
+}
+.img {
+    margin: auto;
+    border: 2px dotted #ebebeb;
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+}
+input[type="file" i] {
+    appearance: initial;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.submit-button-form {
+    background-color: #39b54a;
+    font-weight: bold;
+    width: 50%;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px;
+    border: none;
+    border-radius: 15px;
+}
+.button-form {
+    width: 50%;
+    padding: 15px;
+    background-color: #666;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+input[type="reset" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+
+
+
+
+
+/*...........ELEMENTOS PRODUCT DESC..............*/
+
+   .nameProd {
+    border: 4px solid #680075;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+   }
+
+   .marca {
+    border: 2px solid #680075;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+   }
+
+   .otrasImagenes{
+       display: flex;
+   }
+
+
+
+.productDescription {
+    padding: 0 35px;
+    text-align: justify;
+}
+
+.precios,
+.adding,
+.estado,
+.stock,
+.descripcion {
+    border: 2px solid #680075;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+    transition-duration: .5s;
+}
+
+.adding:hover{
+    color: green;
+    width: 150px;
+    border: 2px solid green;
+}
+
+.informa i:hover{
+    color: green;
+}
+
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: stretch;
+
+}
+
+.principalImg{
+    max-width: 100%;
+    height: auto;
+}
+
+.fotos {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+.navbar {
+    display:none;
+}
+
+h4{
+    display: block;
+}
+
+  
+.status {
+    position: relative;
+    border: 1px solid #680075;
+    text-align: center;
+    left: 325px;
+    bottom: 313px;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informa{
+    flex-direction:column;
+    width: 350px;
+    height: auto;
+    bottom: 70px;
+}
+
+.informa i {
+    color :#680075;
+
+}
+
+footer {
+    border: solid 2px #680075;
+    border-radius: 4px;
+}
+
+footer h4 {
+    position: relative;
+    left: 20px;
+    font-size: 30px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+footer h5 {
+    font-size: 15px;
+}
+
+
+  @media(min-width: 100px) {
+    .categorias {
+        display: block;
+    }
+    tag {
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+
+    
+   footer h4 {
+    font-size: 20px;
+    left: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    }
+
+    .navbar {
+        display:none;
+    }
+
+    .otrasImagenes {
+        display: none;
+    }
+
+    .principalImg {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    h4 {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section .productos article {
+        width: 45%;
+    }
+   
+    .descuentos {
+        width: 50%;
+    }
+    .categorias {
+        display: block;
+    }
+    tag {
+        display: none;
+    }
+    .categorias ul li {
+        padding: 10px 18px;
+    }
+
+    .productDescription{
+        padding: 0 55px;
+    }
+
+    .informa {
+        padding: 0 55px;
+        text-align: center;
+        width: 220px;
+        font-size: 10px;
+    }
+
+}
+
+    
+@media (min-width: 769px){
+
+    
+    footer h4 {
+        font-size: 20px;
+        left: 10px;
+    }
+
+    footer p {
+        font-size: 17px;
+    }
+
+    .otrasImagenes{
+        display:block;
+        padding: 20px;
+    }
+
+    .descripcion{
+        width: 300px;
+        text-align: justify;
+    }
+
+    .principalImg{
+        width: 30%;
+    }
+    
+    .informa {
+        position: absolute;
+        z-index: -1;
+        font-size: 15px;
+        right : 350px;
+        bottom: -200px;
+    }
+
+    .productos,
+    .descripcion {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    main section .productos article {
+        width: 22%;
+    }
+    .navbar {
+        display: flex;
+    }
+    .categorias {
+        display: block;
+    }
+    .categorias ul li {
+        padding: 10px 16px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    tag {
+        display: inline-block;
+    }
+
+    }
+
+    @media (min-width:1200px) {
+        .categorias {
+            display: block;
+        }
+        .categorias ul li {
+            padding: 20px 36px;
+        }
+        tag {
+            display: inline-block;
+        }
+
+        
+    footer h4 {
+        font-size: 30px;
+        left: 10px;
+    }
+
+    footer p {
+        font-size: 25px;
+        text-align: center;
+    }
+    }
+    
+    
+    /*----------------------------MEDIA QUERIES-------------------*/
+
+
+
+
+
+
+
+

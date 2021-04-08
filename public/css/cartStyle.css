@@ -1,0 +1,174 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    color: #680075;
+    background-color: white;
+    border-bottom: solid 5px rgba(104, 0, 117, 1);
+    padding: 0px;
+}
+
+.flecha {
+    text-align: center;
+}
+
+div.flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+body {
+    background-color: #d8d2d4;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opciones {
+    display: flex;
+    justify-content: left;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 15px;
+    border-bottom: thin;
+}
+
+#filtro {
+    border: thin;
+    padding: 0%;
+    background-color: transparent;
+}
+
+#imagen {
+    display: inline-block;
+    max-width: 35%;
+    height: auto;
+    margin-right: 25px;
+    border-radius: 12px;
+    transition: 450ms;
+}
+
+#imagen:hover {
+    box-shadow: 0 0 5px 5px #af5cb9;
+    border-radius: 12px;
+}
+
+.Producto1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.Producto2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.Producto3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.Producto4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.Producto5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.FinalizarCompra {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid 3px white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+#total {
+    padding-left: 30px;
+}
+
+#nombreProducto {
+    font-weight: bold;
+    color: #680075;
+}
+
+#fabricante {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#precio {
+    text-align: left;
+    color: #680075;
+    font-weight: bold;
+}
+
+#codigo {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: right;
+    align-items: right;
+    background-color: #680075;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #af5cb9;
+    color: white;
+}

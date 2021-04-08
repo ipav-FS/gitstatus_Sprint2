@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cartStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Tu Carrito</title>
+</head>
+
+<body>
+    <header>
+
+        <br>
+        <!--HAMBURGUESA-- (quitar comentario para recuperar)
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+        HAMBURGUESA-->
+        <br>
+        <!--LOGO-->
+        <div class="top-header">
+
+            <img src="./images/logo.png" width="20%" class="logo" href="/">
+
+        </div>
+        <!--LOGO-->
+        <nav>
+            <nav class="categorias" alt="Categorias">
+                <ul>
+                    <!--categorías del nav-bar (quitar comentario para reintegrar)
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Videojuegos</a></li>
+                    <li><a href="#">Cine</a></li>
+                    categorías del nav-bar-->
+                    <!--íconos del nav-bar-->
+                    <li>
+                        <a href="/#">
+                            <i class="fas fa-bars"></i>
+                            <tag id="">Categorías</tag>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="/search">
+                            <i class="fas fa-search"></i>
+                            <tag>Buscar</tag>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/login.html">
+                            <i class="fas fa-user"></i>
+                            <tag>Ingresá</tag>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/register.html">
+                            <i class="fas fa-user-plus"></i>
+                            <tag>Registrate</tag>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="/cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <tag>Carrito</tag>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="/about-us">
+                            <i class="fas fa-question-circle"></i>
+                            <tag>About Us</tag>
+                        </a>
+                    </li>
+                    <!--íconos del nav-bar-->
+
+
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <article class="opciones">
+            <select name="Filtrar" id="filtro">
+                <option value="1">Mayor Precio</option>
+                <option value="2">Menor Precio</option>
+                <option value="3">Relevancia</option>
+                <option value="4">Calificación</option>
+
+            </select>
+
+        </article>
+        <article class="Producto1">
+            <img id="imagen" src="./images/cascoStormtrooper.png" alt="Imagen de Producto">
+            <div>
+                <p id="nombreProducto">Casco Stormtrooper Imperial </p>
+                <p id="fabricante">Anovos Productions</p>
+                <p id="codigo">Cod:0023</p>
+                <p id="precio">$600</p>
+
+
+            </div>
+
+
+        </article>
+        <article class="Producto2">
+            <img id="imagen" src="./images/capacitadordeflujo.png" alt="Imagen de Producto">
+            <div>
+                <p id="nombreProducto">Capacitador de Flujo</p>
+                <p id="fabricante">Diamond Select Toys</p>
+                <p id="codigo">Cod:0123</p>
+                <p id="precio">$350</p>
+
+
+            </div>
+
+
+        </article>
+        <article class="Producto3">
+            <img id="imagen" src="./images/plasmarifle.png" alt="Imagen de Producto">
+            <div>
+                <p id="nombreProducto">Plasma Rifle</p>
+                <p id="fabricante">Project Triforce</p>
+                <p id="codigo">Cod:1234</p>
+                <p id="precio">$300</p>
+
+
+            </div>
+
+
+        </article>
+        <article class="Producto4">
+            <img id="imagen" src="./images/pokeball.png" alt="Imagen de Producto">
+            <div>
+                <p id="nombreProducto">Pokeball</p>
+                <p id="fabricante">The Wand Company</p>
+                <p id="codigo">Cod:4321</p>
+                <p id="precio">$150</p>
+
+
+            </div>
+
+
+        </article>
+        <article class="Producto5">
+            <img id="imagen" src="./images/powerfist.png" alt="Imagen de Producto">
+            <div>
+                <p id="nombreProducto">Power Fist</p>
+                <p id="fabricante">Chronic Collectables</p>
+                <p id="codigo">Cod:0987</p>
+                <p id="precio">$600</p>
+
+
+            </div>
+
+
+        </article>
+        <article class="FinalizarCompra">
+            <p id="total">Total</p>
+            <p id="precio">$--------</p>
+            <br>
+            <br>
+            <div>
+                <a href="#" class="button">Finalizar Compra</a>
+
+            </div>
+
+
+        </article>
+
+
+
+    </main>
+
+<footer>
+    <section>
+        <article>
+            <h4>Para Mas información:</h4>
+            <p>calabozoandroide@gmail.com <i class="fas fa-envelope"></i></p>
+            <p>11-1234-5678 <i class="fas fa-phone"></i></p>
+            <p>Calle falsa 123 <i class="fas fa-map-marked-alt"></i></p>
+        </article>
+    </section>
+    <br>
+    <section>
+        <article>
+            <h5>Copyright © 1999-2021 </h5>
+        </article>
+    </section>
+</footer>
+</body>
+</html>
