@@ -97,6 +97,24 @@ tag {
     border-bottom: solid 4px rgba(104, 0, 117, 1);
 }
 
+.categorias .search-container button {
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.categorias input[type=text] {
+    font-size: 17px;
+    border: none;
+    padding: 10px 12px;
+    size: 20px;
+}
+
+.categorias .search-container {
+    padding: 0;
+    display: inline-block;
+}
+
 
 /*...........CATEGORÍAS DEL NAV-BAR..............*/
 
