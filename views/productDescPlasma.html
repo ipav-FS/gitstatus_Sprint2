@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/css/descStyle.css' />
+    <link rel="stylesheet" href='/css/styles.css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,15 +16,11 @@
 </head>
 
 <body>
+
+
+
     <header>
 
-        <br>
-        <!--HAMBURGUESA-- (quitar comentario para recuperar)
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-        HAMBURGUESA-->
-        <br>
         <!--LOGO-->
         <div class="top-header">
 
@@ -35,29 +31,34 @@
         <nav>
             <nav class="categorias" alt="Categorias">
                 <ul>
-                    <!--categorías del nav-bar (quitar comentario para reintegrar)
-                    <li><a href="#">Anime</a></li>
-                    <li><a href="#">Videojuegos</a></li>
-                    <li><a href="#">Cine</a></li>
-                    categorías del nav-bar-->
-                    <!--íconos del nav-bar-->
-                    <li>
-                        <a href="/#">
-                            <i class="fas fa-bars"></i>
-                            <tag id="">Categorías</tag>
-                        </a>
+
+                    <li id="categ">
+
+                        <div class="subnav">
+                            <button class="subnavbtn">Categorías <i class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="#">Anime</a>
+                                <a href="#">Videojuegos</a>
+                                <a href="#">Cine</a>
+                                <a href="#">Cómics</a>
+                                <a href="#">Shows</a>
+
+                            </div>
+                        </div>
+
 
                     </li>
                     <li>
-                        <a href="/search">
-                            <i class="fas fa-search"></i>
-                            <tag>Buscar</tag>
+                        <a href="/#">
+                            <i class="fas fa-home"></i>
+                            <tag>Inicio</tag>
                         </a>
                     </li>
+
 
                     <li>
                         <a href="/login.html">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-sign-in-alt"></i>
                             <tag>Ingresá</tag>
                         </a>
                     </li>
@@ -76,12 +77,17 @@
 
                     </li>
 
-                    <li>
-                        <a href="/about-us">
-                            <i class="fas fa-question-circle"></i>
-                            <tag>About Us</tag>
-                        </a>
-                    </li>
+
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Buscar..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+
+
+
                     <!--íconos del nav-bar-->
 
 
@@ -89,8 +95,9 @@
             </nav>
     </header>
 
+
     <main>
-            <!--Showcase del Producto-->
+        <!--Showcase del Producto-->
         <section class="productDescription">
             <div class="producto">
                 <p class="nameProd">Rifle Plasma</p>
@@ -107,13 +114,13 @@
         </section>
         <div class="informa">
             <p class="precios">$9000</p>
-            <p class="adding">Añadir al Carrito  <i class="fas fa-cart-plus"> </i> </p>
-           
+            <p class="adding">Añadir al Carrito <i class="fas fa-cart-plus"> </i> </p>
+
             <p class="estado">NUEVO</p>
             <br>
             <p class="stock">En Stock</p>
             <br>
-            <p class="description">Replica display del clasico arsenal, visto en Halo 2  </p>
+            <p class="description">Replica display del clasico arsenal, visto en Halo 2 </p>
         </div>
 
 

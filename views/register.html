@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/css/indexStyle.css' >
+    <link rel="stylesheet" href='/css/styles.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,46 +20,44 @@
 
     <header>
 
-        <br>
-        <!--HAMBURGUESA-- (quitar comentario para recuperar)
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-        HAMBURGUESA-->
-        <br>
         <!--LOGO-->
         <div class="top-header">
 
-            <img src="./images/logo.png" width="20%" class="logo" href="/">
+            <img src="./images/logo.png" width="20%" class="logo" href="./">
 
         </div>
         <!--LOGO-->
         <nav>
             <nav class="categorias" alt="Categorias">
                 <ul>
-                    <!--categorías del nav-bar (quitar comentario para reintegrar)
-                    <li><a href="#">Anime</a></li>
-                    <li><a href="#">Videojuegos</a></li>
-                    <li><a href="#">Cine</a></li>
-                    categorías del nav-bar-->
-                    <!--íconos del nav-bar-->
-                    <li>
-                        <a href="/#">
-                            <i class="fas fa-bars"></i>
-                            <tag id="">Categorías</tag>
-                        </a>
+
+                    <li id="categ">
+
+                        <div class="subnav">
+                            <button class="subnavbtn">Categorías <i class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="#">Anime</a>
+                                <a href="#">Videojuegos</a>
+                                <a href="#">Cine</a>
+                                <a href="#">Cómics</a>
+                                <a href="#">Shows</a>
+
+                            </div>
+                        </div>
+
 
                     </li>
                     <li>
-                        <a href="/search">
-                            <i class="fas fa-search"></i>
-                            <tag>Buscar</tag>
+                        <a href="/#">
+                            <i class="fas fa-home"></i>
+                            <tag>Inicio</tag>
                         </a>
                     </li>
+
 
                     <li>
                         <a href="/login.html">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-sign-in-alt"></i>
                             <tag>Ingresá</tag>
                         </a>
                     </li>
@@ -78,12 +76,17 @@
 
                     </li>
 
-                    <li>
-                        <a href="/about-us">
-                            <i class="fas fa-question-circle"></i>
-                            <tag>About Us</tag>
-                        </a>
-                    </li>
+
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Buscar..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+
+
+
                     <!--íconos del nav-bar-->
 
 
@@ -92,64 +95,67 @@
     </header>
 
 
+
     <main>
         <article class="form-container">
             <form method="POST" action="#" class="register-form">
                 <div>
-                        <div class="titulo-register">REGISTRATE</div>
-                        <div class="ya-tenes"><a href=login.html> Si ya tienes cuenta ingresa ahora</a></div>
-                        <div class="form-control">
-                            <input type="text" name="name" id="name" placeholder="Nombre y apellido" required="" class="control">
-                            <span class="Feedback"></span>
-                        </div>
-                        <div class="form-control">
-                            <input type="text" name="user" id="user" placeholder="Nombre de usuario" required="" class="control">
-                            <span class="Feedback"></span>
-                        </div>
-                        <div class="form-control">                    
-                            <label for="dateBrith">Fecha de Nacimiento:</label>
-                                <input type="date" name="dateBrith" id="dateBrith" class="control">
-                        </div>
-                        <div class="form-control">
-                            <input type="text" name="address" id="address" placeholder="Domicilio" class="control">
-                        </div>
-                        <div class="form-control">
-                            <label>Categorías de Interes</label>
-                            <div class="interests">
-                                <div class="interest-option">
-                                    <input type="checkbox" name="interests" value="Videojuegos" id="Videojuegos">
-                                    <label for="home">Hogar</label>
-                                </div>
-                                <div class="interest-option">
-                                    <input type="checkbox" name="interests" value="Anime" id="Anime">
-                                    <label for="toys">Juguetería</label>
-                                </div>
-                                <div class="interest-option">
-                                    <input type="checkbox" name="interests" value="Cine" id="Cine">
-                                    <label for="healthy">Vida sana</label>
-                                </div>
+                    <div class="titulo-register">REGISTRATE</div>
+                    <div class="ya-tenes"><a href=login.html> Si ya tienes cuenta ingresa ahora</a></div>
+                    <div class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido:" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="user" id="user" placeholder="Nombre de usuario:" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="dateBrith">Fecha de Nacimiento:</label>
+                        <input type="date" name="dateBrith" id="dateBrith" class="control">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="address" id="address" placeholder="Domicilio:" class="control">
+                    </div>
+                    <div class="form-control">
+                        <label>Categorías de Interés:</label>
+
+                        <div class="interests">
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Videojuegos" id="Videojuegos">
+                                <label for="home">Anime</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Anime" id="Anime">
+                                <label for="toys">Videojuegos</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Cine" id="Cine">
+                                <label for="healthy">Cine</label>
                             </div>
                         </div>
-                        <div class="form-control">
-                            <label>Imagen de perfil:</label>
-                            <div class="img">
-                                <img src="">
-                            </div>
-                            <input type="file" id="fileavatar" name="fileavatar" accept="image/png, image/jpeg">
-                        </div>                    
-                        <div class="form-control">
-                            <input type="password" name="pass" id="pass" placeholder="Contraseña" class="control" required="">
-                        </div>    
-                        <div class="form-control">                    
-                            <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña" class="control" required="">
+                    </div>
+                    <div class="form-control">
+                        <label>Imagen de perfil:</label>
+                        <div class="img">
+                            <img src=" ">
                         </div>
-                        <div class="form-control buttons">                    
-                            <input type="submit" value="Enviar" class="submit-button-form">
-                            <input type="reset" value="Limpiar" class="button-form">
-                        </div>
-                    
-                </div></form>     
-        </article> 
+                        <input type="file" id="fileavatar" name="fileavatar" accept="image/png, image/jpeg" class="form-control-btn">
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña:" class="control" required="">
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña:" class="control" required="">
+                    </div>
+                    <div class="form-control buttons">
+                        <input type="submit" value="Enviar" class="submit-button-form">
+                        <input type="reset" value="Limpiar" class="button-form">
+                    </div>
+
+                </div>
+            </form>
+        </article>
     </main>
     <footer>
         <section>
@@ -167,10 +173,10 @@
             </article>
         </section>
     </footer>
-    
-    
-    
-    
+
+
+
+
 </body>
-    
+
 </html>
