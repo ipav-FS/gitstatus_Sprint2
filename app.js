@@ -6,30 +6,31 @@ const publicPath = path.resolve(__dirname, './public') ;
 const puerto= process.env.PORT;
 
 app.use(express.static(publicPath));
+app.set('view engine', 'ejs');
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'));
+    res.render('index');
 });
-app.get('/register.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'));
+app.get('/register', (req,res) => {
+    res.render('register');
 });
-app.get('/login.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'));
+app.get('/login', (req,res) => {
+    res.render('login');
 });
-app.get('/productDesc.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/productDesc.html'));
+app.get('/productDesc', (req,res) => {
+    res.render('productDesc');
 });
-app.get('/productDescCapacitador.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/productDescCapacitador.html'));
+app.get('/productDescCapacitador', (req,res) => {
+    res.render('productDescCapacitador');
 });
-app.get('/productDescCasco.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/productDescCasco.html'));
+app.get('/productDescCasco', (req,res) => {
+    res.render('productDescCasco');
 });
-app.get('/productDescPlasma.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/productDescPlasma.html'));
+app.get('/productDescPlasma', (req,res) => {
+    res.render('productDescPlasma');
 });
-app.get('/cart.html', (req,res) => {
-    res.sendFile(path.join(__dirname, '/views/cart.html'));
+app.get('/cart', (req,res) => {
+    res.render('cart');
 });
 
 
