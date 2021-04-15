@@ -1,98 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='/css/styles.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="/public/images/logo.png">
 
-    <title>Calabozo del Androide</title>
-</head>
+    <%- include('partials/head') %>
 
 <body>
 
-
-    <header>
-
-        <!--LOGO-->
-        <div class="top-header">
-
-            <img src="./images/logo.png" width="20%" class="logo" href="./">
-
-        </div>
-        <!--LOGO-->
-        <nav>
-            <nav class="categorias" alt="Categorias">
-                <ul>
-
-                    <li id="categ">
-
-                        <div class="subnav">
-                            <button class="subnavbtn">Categorías <i class="fa fa-caret-down"></i></button>
-                            <div class="subnav-content">
-                                <a href="#">Anime</a>
-                                <a href="#">Videojuegos</a>
-                                <a href="#">Cine</a>
-                                <a href="#">Cómics</a>
-                                <a href="#">Shows</a>
-
-                            </div>
-                        </div>
-
-
-                    </li>
-                    <li>
-                        <a href="/#">
-                            <i class="fas fa-home"></i>
-                            <tag>Inicio</tag>
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="/login.html">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <tag>Ingresá</tag>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/register.html">
-                            <i class="fas fa-user-plus"></i>
-                            <tag>Registrate</tag>
-                        </a>
-                    </li>
-                    <li>
-
-                        <a href="/cart.html">
-                            <i class="fas fa-shopping-cart"></i>
-                            <tag>Carrito</tag>
-                        </a>
-
-                    </li>
-
-
-                    <div class="search-container">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="Buscar..." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-
-
-
-
-                    <!--íconos del nav-bar-->
-
-
-                </ul>
-            </nav>
-    </header>
+    <%- include('partials/header') %>
+  
 
     <main>
 
@@ -257,30 +172,8 @@
     </main>
 
     <!--FOOTER-->
-    <footer>
 
-        <section>
-            <article>
-                <h4>Para Mas información:</h4>
-                <p>calabozoandroide@gmail.com <i class="fas fa-envelope "></i></p>
-                <p>11-1234-5678 <i class="fas fa-phone "></i></p>
-                <p>Calle falsa 123 <i class="fas fa-map-marked-alt "></i></p>
-            </article>
-        </section>
-        <br>
-        <section>
-            <article>
-                <h5>Copyright © 1999-2021 </h5>
-            </article>
-        </section>
-
-
-
-    </footer>
-
-
-
-
+    <%- include('partials/footer') %>
 
 </body>
 
