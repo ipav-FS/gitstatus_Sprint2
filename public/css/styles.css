@@ -263,6 +263,17 @@ tag {
     padding-bottom: 50px;
 }
 
+
+.titulo-create {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    color: #680075;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
 form {
     display: block;
     margin-top: 20px;
@@ -272,6 +283,7 @@ form {
     margin-top: 15px;
     display: block;
 }
+
 
 .form-control .control {
     width: 100%;

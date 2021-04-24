@@ -34,7 +34,9 @@ app.get('/productDescPlasma', (req,res) => {
 app.get('/cart', (req,res) => {
     res.render('cart');
 });
-
+app.get('/createProd', (req,res) => {
+    res.render('createProd');
+});
 
 app.listen(puerto || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
