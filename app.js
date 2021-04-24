@@ -6,13 +6,13 @@ const publicPath = path.resolve(__dirname, './public') ;
 const puerto= process.env.PORT;
 
 app.use(express.static(publicPath));
+app.set('view engine', 'ejs');
 
 app.set('view engine', 'ejs')
 
 app.get('/', (req,res) => {
     res.render('index');
 });
-
 app.get('/register', (req,res) => {
     res.render('register');
 });
